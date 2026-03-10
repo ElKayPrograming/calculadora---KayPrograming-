@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
-<title>Calculadora Premium</title>
+
+<title>Calculadora Online Gratis | KayPrograming</title>
+
+<meta name="description" content="Calculadora online rápida y gratuita desarrollada con HTML, CSS y JavaScript por KayPrograming. Realiza operaciones matemáticas fácilmente.">
+
+<meta name="keywords" content="calculadora online, calculadora gratis, calculadora web, calculadora javascript">
+
+<meta name="author" content="KayPrograming">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <link rel="stylesheet" href="style.css">
 
 <style>
+
+.titulo{
+    text-align:center;
+    color:white;
+    margin-bottom:15px;
+    font-size:22px;
+}
 
 .creditos{
     margin-top:15px;
@@ -23,44 +42,47 @@
 
 <div class="calculadora">
 
-    <input type="text" id="pantalla" disabled placeholder="0">
+<h1 class="titulo">Calculadora Online</h1>
 
-    <div class="botones">
+<input type="text" id="pantalla" disabled placeholder="0">
+
+<div class="botones">
         
-        <button onclick="agregar('7')">7</button>
-        <button onclick="agregar('8')">8</button>
-        <button onclick="agregar('9')">9</button>
-        <button class="operador" onclick="agregar('/')">/</button>
+<button onclick="agregar('7')">7</button>
+<button onclick="agregar('8')">8</button>
+<button onclick="agregar('9')">9</button>
+<button class="operador" onclick="agregar('/')">/</button>
 
-        <button onclick="agregar('4')">4</button>
-        <button onclick="agregar('5')">5</button>
-        <button onclick="agregar('6')">6</button>
-        <button class="operador" onclick="agregar('*')">x</button>
+<button onclick="agregar('4')">4</button>
+<button onclick="agregar('5')">5</button>
+<button onclick="agregar('6')">6</button>
+<button class="operador" onclick="agregar('*')">x</button>
 
-        <button onclick="agregar('1')">1</button>
-        <button onclick="agregar('2')">2</button>
-        <button onclick="agregar('3')">3</button>
-        <button class="operador" onclick="agregar('-')">-</button>
+<button onclick="agregar('1')">1</button>
+<button onclick="agregar('2')">2</button>
+<button onclick="agregar('3')">3</button>
+<button class="operador" onclick="agregar('-')">-</button>
 
-        <button onclick="agregar('0')">0</button>
-        <button onclick="agregar('.')">.</button>
-        <button class="operador" onclick="calcular()">=</button>
-        <button class="operador" onclick="agregar('+')">+</button>
+<button onclick="agregar('0')">0</button>
+<button onclick="agregar('.')">.</button>
+<button class="operador" onclick="calcular()">=</button>
+<button class="operador" onclick="agregar('+')">+</button>
 
-    </div>
+</div>
 
-    <div class="botones-extra">
-        <button class="retroceso" onclick="retroceso()">⌫</button>
-        <button class="borrar" onclick="limpiar()">C</button>
-    </div>
+<div class="botones-extra">
+<button class="retroceso" onclick="retroceso()">⌫</button>
+<button class="borrar" onclick="limpiar()">C</button>
+</div>
 
-    <p class="creditos">
-        © 2026 Desarrollado por KayPrograming
-    </p>
+<p class="creditos">
+© 2026 Desarrollado por KayPrograming
+</p>
 
 </div>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
